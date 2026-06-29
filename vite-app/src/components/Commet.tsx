@@ -21,6 +21,7 @@ const Comment = ({ comments }: CommentProps) => {
       [id]: (pre[id] || 0) + 1,
     }));
   };
+
   return (
     <div className="space-y-4">
       {comments.map((comment) => (

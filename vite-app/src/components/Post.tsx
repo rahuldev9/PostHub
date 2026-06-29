@@ -21,7 +21,6 @@ const PostCard = ({ post }: { post: Post }) => {
   const [comments, setComments] = useState<Comment[]>([]);
   const [showComments, setShowComments] = useState(false);
   const [loadingComments, setLoadingComments] = useState(false);
-
   const fetchComments = async () => {
     try {
       setLoadingComments(true);
